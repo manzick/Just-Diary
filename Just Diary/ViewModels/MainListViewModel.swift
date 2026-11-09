@@ -45,29 +45,9 @@ extension MainList {
         
         private func getMonthsList(forYear year: String) -> [YearAndMonthStruct] {
             let memories = LocalRxDataManager.shared.getMemories().value
-            var monthsString: [String] = []
-            for memory in memories {
-                if monthsString.count == 11 {
-                    break
-                }
-                if UseCases.shared.getYearFromDate(memory.date) != year {
-                    continue
-                }
-                monthsString.appendIfNotContains(
-                    UseCases.shared.getMonthFromDate(memory.date)
-                )
-            }
-            let formatter : DateFormatter = {
-                let df = DateFormatter()
-    //            df.dateFormat = "MMMM"
-                df.dateFormat = "LLLL"
-                return df
-            }()
-            let sortedArrayOfMonths = monthsString.sorted( by: {
-                formatter.date(from: $0)! < formatter.date(from: $1)!
-            })
+            let monthsString = UseCases.shared.getMonthsList(forYear: year, from: memories)
             var value: [YearAndMonthStruct] = []
-            for monthString in sortedArrayOfMonths {
+            for monthString in monthsString {
                 let month = YearAndMonthStruct(
                     name: monthString,
                     year: year

@@ -20,8 +20,6 @@ struct YearAndMonthStruct: Identifiable, Equatable {
     }
     
     static func ==(left:YearAndMonthStruct, right:YearAndMonthStruct) -> Bool {
-        let value1 = left.name == right.name
-        let value2 = left.months == right.months
-        return value1 == value2
+        return left.name == right.name && left.months == right.months
     }
 }

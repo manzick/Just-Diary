@@ -69,12 +69,6 @@ class LocalRxDataManager {
     
     // MARK: - Private main stuff
     private init() {
-        let debugData = [
-            Memory(date: Date(timeIntervalSince1970: 1636717136), title: "Привет", message: "Мир"),
-            Memory(date: Date(timeIntervalSince1970: 1668089547), title: "Заголовок", message: "Старая заметка")
-        ]
-        self.memories.accept(debugData)
-        
         self.memories.accept(DatabaseDataManager.shared.getData())
     }
     

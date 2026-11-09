@@ -19,7 +19,7 @@ extension R {
             static let noName = "Untitled".localize()
         }
         struct yearList {
-            static let title = "Just Dairy".localize()
+            static let title = "Just Diary".localize()
         }
         struct aboutDeveloper {
             static let title = "About Developer".localize()

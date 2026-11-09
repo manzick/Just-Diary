@@ -1,4 +1,4 @@
-# Just Dairy
+# Just Diary
 
 A project for learning SwiftUI. An application for recording memories. Kind of like a journal.
 
