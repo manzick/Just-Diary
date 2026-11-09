@@ -60,7 +60,7 @@
 "Rewrite" = "Rewrite";
 "Load data from JSON failed" = "Load data from JSON failed";
 "jsonHeader" = "json backup";
-"jsonFooter" = "Your data belongs to you. If you want to leave us, you can import all entries in a relatively standard format";
+"jsonFooter" = "Your data belongs to you. If you ever want to leave, export all entries as JSON";
 /* ============================================================ */
 
 
@@ -68,5 +68,5 @@
 "Statistic" = "Statistics";
 "memoriesCount" = "Number of memories";
 "wordsCount" = "Number of words in memories";
-"yearCount" = "Number of years, with memories";
+"yearCount" = "Years with memories";
 /* ============================================================ */
