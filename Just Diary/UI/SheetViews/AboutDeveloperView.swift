@@ -27,8 +27,8 @@ struct AboutDeveloperView: View {
                     .padding(.bottom, 1)
                 
                 HStack{
-                    Link(destination: URL(string: R.string.link.manzickTwitterLink)!) {
-                        Image(R.imageName.twitterLogo)
+                    Link(destination: URL(string: R.string.link.manzickXLink)!) {
+                        Image(R.imageName.xLogo)
                             .resizable()
                             .frame(width: iconSize, height: iconSize)
                     }
@@ -42,10 +42,7 @@ struct AboutDeveloperView: View {
                     .padding(.bottom, 1)
                 
                 
-                Button(action: {
-                    print()
-                    //TODO: Добавить ссылку на гитхаб
-                }) {
+                Link(destination: URL(string: R.string.link.sourceCodeLink)!) {
                     Text(R.string.aboutDeveloper.sourceButton)
                 }
                 

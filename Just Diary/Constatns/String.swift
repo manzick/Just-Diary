@@ -12,8 +12,9 @@ extension R {
         static let text = "Text"
         static let ok = "OK"
         struct link {
-            static let manzickTwitterLink = "https://mobile.twitter.com/manzick"
+            static let manzickXLink = "https://x.com/manzick"
             static let manzickTelegramLink = "https://t.me/manzick"
+            static let sourceCodeLink = "https://github.com/manzick/Just-Diary"
         }
         struct model {
             static let noName = "Untitled".localize()
@@ -52,6 +53,9 @@ extension R {
         struct newMemoryToolbar {
             static let exitAlertTitle = "exitAlertTitle".localize()
             static let exitAlertButton = "exitAlertButton".localize()
+        }
+        struct memoryView {
+            static let placeholder = "memoryPlaceholder".localize()
         }
         struct memoryViewToolbar {
             static let edit = "edit".localize()

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MemoryViewToolbar: ToolbarContent {
     
-    let close: () -> Void
+    let close: (() -> Void)?
     let delete: () -> Void
     
     let currentMemory: Memory
@@ -20,10 +20,12 @@ struct MemoryViewToolbar: ToolbarContent {
     var body: some ToolbarContent {
     #if os(iOS)
         ToolbarItem(placement: .navigationBarLeading) {
-            Button(action: {
-                self.close()
-            }) {
-                Image(systemName: "multiply").imageScale(.large)
+            if let close {
+                Button(action: {
+                    close()
+                }) {
+                    Image(systemName: "multiply").imageScale(.large)
+                }
             }
         }
         ToolbarItem(placement: .navigationBarLeading) {

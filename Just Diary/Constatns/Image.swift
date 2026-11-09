@@ -11,6 +11,6 @@ extension R {
     struct imageName {
         static let manzickAvatar = "ManzickAvatar"
         static let telegramLogo = "TelegramLogo"
-        static let twitterLogo = "TwitterLogo"
+        static let xLogo = "XLogo"
     }
 }
